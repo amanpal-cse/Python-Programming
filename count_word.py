@@ -1,5 +1,6 @@
-s = input("Enter a string: ")
+with open("demo.txt", "r") as file:
+    data = file.read()
 
-words = s.split()
+words = data.split()
 
-print("Words =", len(words))
+print("Total Words:", len(words))
